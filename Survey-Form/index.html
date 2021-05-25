@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <header>
+        <h1 id="title">Public Sentiment About Covid-19 in Indonesia</h1>
+        <p id="description">Thank you for taking your time to fill the Survey</p>
+    </header>
+    <body>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label id="email" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min=6 max=100 placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <p>What is your last education?</p>
+                <select name="education" id="dropdown">
+                    <option disabled selected value>Last education</option>
+                    <option value="sd">Elementry School</option>
+                    <option value="smp">Junior High School</option>
+                    <option value="sma">Senior High School</option>
+                    <option value="s1">Bachelor Degree</option>
+                    <option value="s2">Magister Degree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How often you go out during the pandemic?</p>
+                <label for="">
+                    <input class="radio-input" name="frequency" value="vr" type="radio" checked>Very Rarely
+                </label>
+                <label for="">
+                    <input class="radio-input" name="frequency" value="qr" type="radio" checked>Quite rarely
+                </label>
+                <label for="">
+                    <input class="radio-input" name="frequency" value="n" type="radio" checked>Normally
+                </label>
+                <label for="">
+                    <input class="radio-input" name="frequency" value="qo" type="radio" checked>Quite often
+                </label>
+                <label for="">
+                    <input class="radio-input" name="frequency" value="vo" type="radio" checked>Very often
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Do you always put on your mask when going out?</p>
+                <label for="">
+                    <input class="radio-input" name="mask" value="vr" type="radio" checked>Never
+                </label>
+                <label for="">
+                    <input class="radio-input" name="mask" value="qr" type="radio" checked>Occasionally
+                </label>
+                <label for="">
+                    <input class="radio-input" name="mask" value="n" type="radio" checked>Sometimes
+                </label>
+                <label for="">
+                    <input class="radio-input" name="mask" value="qo" type="radio" checked>Usually
+                </label>
+                <label for="">
+                    <input class="radio-input" name="mask" value="vo" type="radio" checked>Always
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Do you have any idea to stop the pandemic?</p>
+                <textarea name="sugestion" id="sugestion" cols="30" rows="10" placeholder="Enter your idea here..."></textarea>
+            </div>
+        </form>
+        <button id="submit" type="submit">Submit</button>
+        </div>
+    </body>
+</html>
